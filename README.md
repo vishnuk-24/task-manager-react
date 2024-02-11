@@ -1,5 +1,10 @@
 # task-manager
 
-FE: React, Tailwind css
-BE: FastAPI
-DB: MongoDB
+### FE
+React, Tailwind css
+
+### BE
+FastAPI
+
+### DB
+MongoDB
