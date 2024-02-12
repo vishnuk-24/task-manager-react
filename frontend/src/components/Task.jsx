@@ -12,9 +12,9 @@ function Task({ task }) {
     <>
       <div>
         <p>
-          <span>{task.title} : </span> {task.description}
+          <span>{task.title} </span>
           <button
-            className="bg-red-500 text-white"
+            className="bg-red-500 text-white font-bold px-2 py-1 rounded mt-4 ml-auto hover:bg-red-600 transition"
             onClick={() => deleteHandler(task.title)}
           >
             Delete

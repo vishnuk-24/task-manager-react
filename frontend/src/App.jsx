@@ -16,9 +16,9 @@ function App() {
 
   return (
     <>
-      <div className="mt-0 font-serif text-center bg-gray-200 py-10 px-5">
-        <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-          <h1 className="bg-blue">Task Manager</h1>
+      <div className="bg-gray-100 h-screen flex items-center justify-center">
+        <div className="bg-white p-8 rounded shadow-md w-96">
+          <h1 className="text-2xl font-semibold mb-4">Task Manager</h1>
           <AddTask />
           <TaskList tasks={tasks} />
         </div>

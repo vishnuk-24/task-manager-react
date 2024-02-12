@@ -21,12 +21,12 @@ function AddTask() {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="mb-4">
       <h5>Add your task</h5>
       <div className="p-8 ">
         <span>
           <input
-            className="mt-4 border rounded p-2"
+            className="w-full border p-2 rounded"
             type="text"
             placeholder="Title"
             value={title}
@@ -40,7 +40,7 @@ function AddTask() {
             onChange={(e) => setDescription(e.target.value)}
           />
           <button
-            className="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            className="mt-2 bg-blue-500 text-white px-4 py-2 rounded"
             onClick={addTodoHandler}
           >
             Add Task
