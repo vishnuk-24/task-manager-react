@@ -1,6 +1,19 @@
+import { useState, useEffect } from "react";
+import axios from "axios";
+
 import Task from "./Task";
 
-function TaskList({ tasks }) {
+
+function TaskList() {
+  const [tasks, setTasks] = useState([]);
+
+  // Read all the tasks
+  useEffect(() => {
+    axios.get("http://localhost:8000/api/v1/tasks").then((response) => {
+      setTasks(response.data);
+    });
+  });
+
   return (
     <>
       <div>TaskList</div>
